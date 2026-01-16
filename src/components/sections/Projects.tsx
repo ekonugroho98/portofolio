@@ -21,7 +21,7 @@ const projects: Project[] = [
     tech: ["Go", "SQL", "REST API"],
     imageUrl: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=800&auto=format&fit=crop",
     linkText: "BlueBird Project",
-    linkIcon: "corporate_fare"
+    linkIcon: "🚗"
   },
   {
     title: "Extended Tipping System",
@@ -31,7 +31,7 @@ const projects: Project[] = [
     tech: ["Go", "MySQL", "API Design"],
     imageUrl: "https://images.unsplash.com/photo-1556742049-bcb063994a5c?q=80&w=800&auto=format&fit=crop",
     linkText: "Feature Launch",
-    linkIcon: "payments"
+    linkIcon: "⚡"
   },
   {
     title: "MYBB 6 API Platform",
@@ -41,7 +41,7 @@ const projects: Project[] = [
     tech: ["Go", "Golang", "Performance"],
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=800&auto=format&fit=crop",
     linkText: "Production System",
-    linkIcon: "api"
+    linkIcon: "🔌"
   },
   {
     title: "Data Migration Scheduler",
@@ -51,7 +51,7 @@ const projects: Project[] = [
     tech: ["Java", "SQL Server", "Scheduler"],
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
     linkText: "Enterprise Solution",
-    linkIcon: "data_exploration"
+    linkIcon: "💾"
   },
   {
     title: "Google Hotel Ads Integration",
@@ -61,7 +61,7 @@ const projects: Project[] = [
     tech: ["PHP", "CodeIgniter", "XML"],
     imageUrl: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop",
     linkText: "Live Integration",
-    linkIcon: "hub"
+    linkIcon: "🔗"
   },
   {
     title: "Microservices Re-architecture",
@@ -71,7 +71,7 @@ const projects: Project[] = [
     tech: ["Go", "Docker", "Microservices"],
     imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
     linkText: "Architecture Shift",
-    linkIcon: "architecture"
+    linkIcon: "☁️"
   }
 ];
 
@@ -130,7 +130,7 @@ export const Projects: React.FC = () => {
               </div>
               <div className="flex gap-3">
                 <button className="flex-1 bg-primary text-white text-xs font-bold h-9 rounded-lg hover:bg-[#008c75] transition-colors flex items-center justify-center gap-2">
-                  <span className="material-symbols-outlined text-sm">{project.linkIcon}</span>
+                  <span className="text-sm">{project.linkIcon}</span>
                   {project.linkText}
                 </button>
               </div>
