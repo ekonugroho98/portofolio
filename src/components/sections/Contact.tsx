@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-4 group cursor-pointer">
                 <div className="size-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm transition-transform group-hover:-translate-y-1">
-                  <span className="material-symbols-outlined text-primary">mail</span>
+                  <span className="text-2xl">📧</span>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-slate-400 font-bold">Email</p>
@@ -23,7 +23,7 @@ export const Contact: React.FC = () => {
               </div>
               <div className="flex items-center gap-4 group cursor-pointer">
                 <div className="size-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm transition-transform group-hover:-translate-y-1">
-                  <span className="material-symbols-outlined text-primary">phone_iphone</span>
+                  <span className="text-2xl">📱</span>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-slate-400 font-bold">Phone</p>
@@ -31,8 +31,8 @@ export const Contact: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center gap-8 mt-12">
-                 <a className="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-semibold" href="#">
-                  <span className="material-symbols-outlined">link</span>
+                 <a className="text-slate-400 hover:text-primary transition-colors flex items-center gap-2 font-semibold" href="https://linkedin.com/in/ekonugroho98" target="_blank" rel="noopener noreferrer">
+                  <span className="text-xl">🔗</span>
                   <span>LinkedIn</span>
                 </a>
               </div>
@@ -60,7 +60,7 @@ export const Contact: React.FC = () => {
               </div>
               <button className="w-full bg-primary text-white font-bold py-4 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all flex items-center justify-center gap-2 group" type="submit">
                 <span>Send Message</span>
-                <span className="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">send</span>
+                <span className="text-lg transition-transform group-hover:translate-x-1">✈️</span>
               </button>
             </form>
           </div>
