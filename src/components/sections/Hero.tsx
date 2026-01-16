@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
       <div className="lg:col-span-7 flex flex-col gap-8">
         <div className="flex flex-col gap-4">
           <span className="text-primary font-bold tracking-widest text-xs uppercase flex items-center gap-2">
-            <span className="material-symbols-outlined text-sm">location_on</span>
+            <span className="text-sm">📍</span>
             Bogor, Indonesia
           </span>
           <h1 className="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight text-[#0c1d1a] dark:text-white">
