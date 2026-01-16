@@ -1,5 +1,6 @@
 
 import React from 'react';
+import profilePhoto from '@/assets/images/eko-nugroho.jpg';
 
 export const Hero: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ export const Hero: React.FC = () => {
       <div className="lg:col-span-5 relative">
         <div className="aspect-square bg-neutral-surface dark:bg-gray-800 rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 border border-gray-100 dark:border-gray-700 shadow-xl">
            <img
-             src="/src/assets/images/eko-nugroho.jpg"
+             src={profilePhoto}
              alt="Eko Nugroho - Backend Engineer & System Architect"
              className="w-full h-full object-cover"
            />
