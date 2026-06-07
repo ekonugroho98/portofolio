@@ -55,7 +55,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
           <a
-            href="mailto:ekonugroho98@gmail.com"
+            href="#contact"
             className="hidden sm:inline-flex bg-primary text-white px-4 py-2 rounded-lg text-[13px] font-mono font-semibold hover:bg-primary-dark transition-colors"
           >
             ./contact
