@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
               <span className="relative inline-flex size-2 rounded-full bg-primary" />
             </span>
-            available for backend roles
+            available for freelance projects
           </div>
 
           <div className="flex flex-col gap-5">
@@ -23,15 +23,15 @@ export const Hero: React.FC = () => {
               <span className="text-primary">const</span> engineer <span className="text-slate-400">=</span> <span className="text-accent">{'{'}</span>
             </p>
             <h1 className="text-4xl md:text-6xl font-black leading-[1.08] tracking-tight text-slate-900 dark:text-white">
-              Backend Engineer
+              Fullstack Engineer
               <br />
-              <span className="text-primary">&amp; System Architect</span>
+              <span className="text-primary">Backend Specialist</span>
             </h1>
             <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-              7+ years building high-performance backend systems. Specializing in{' '}
+              Fullstack Engineer with 7+ years of experience, specializing in backend systems. Proficient in{' '}
               <span className="font-mono text-primary">Go</span>,{' '}
               <span className="font-mono text-primary">Java</span>, and scalable microservices.
-              Currently optimizing critical operations at BlueBird.
+              Available for freelance projects.
             </p>
             <p className="font-mono text-sm text-slate-500 dark:text-slate-400">
               <span className="text-accent">{'}'}</span><span className="cursor-blink text-primary">_</span>
