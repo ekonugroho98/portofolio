@@ -69,7 +69,7 @@ const projects: Project[] = [
 
 export const Projects: React.FC = () => {
   const [filter, setFilter] = useState('all');
-  const categories = ['all', 'System Integration', 'API Development', 'Data Engineering', 'Cloud Architecture'];
+  const categories = ['all', 'System Integration', 'Feature Enhancement', 'API Development', 'API Integration', 'Data Engineering', 'Cloud Architecture'];
   const filtered = projects.filter((p) => filter === 'all' || p.category === filter);
 
   return (
