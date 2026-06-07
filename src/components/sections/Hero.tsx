@@ -62,7 +62,7 @@ export const Hero: React.FC = () => {
               <span className="size-3 rounded-full bg-red-400" />
               <span className="size-3 rounded-full bg-yellow-400" />
               <span className="size-3 rounded-full bg-green-400" />
-              <span className="ml-2 font-mono text-xs text-slate-400">eko@bluebird:~</span>
+              <span className="ml-2 font-mono text-xs text-slate-400">eko@dev:~</span>
             </div>
             {/* Photo */}
             <div className="aspect-square overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
