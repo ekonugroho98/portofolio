@@ -7,7 +7,7 @@ interface UmkmProject {
   description: string;
   tech: string[];
   url: string;
-  github: string;
+
 }
 
 const umkmProjects: UmkmProject[] = [
@@ -17,7 +17,7 @@ const umkmProjects: UmkmProject[] = [
     description: 'Landing page for a laundry pickup & delivery service with online ordering via WhatsApp, pricing packages, and customer testimonials.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://01-kilofresh-laundry.vercel.app',
-    github: 'https://github.com/ekonugroho98/01-kilofresh-laundry',
+
   },
   {
     title: 'Kopi Senja',
@@ -25,7 +25,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Artisan coffee shop website featuring menu showcase, membership plans, gallery, and WhatsApp-based ordering system.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://02-kopi-senja.vercel.app',
-    github: 'https://github.com/ekonugroho98/02-kopi-senja',
   },
   {
     title: "Gentleman's Cut",
@@ -33,7 +32,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Premium barbershop landing page with service catalog, pricing tiers, booking via WhatsApp, and customer reviews.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://03-gentlemans-cut.vercel.app',
-    github: 'https://github.com/ekonugroho98/03-gentlemans-cut',
   },
   {
     title: 'Dapur Bunda Catering',
@@ -41,7 +39,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Home-style catering service with menu packages for events, daily subscriptions, and halal-certified food offerings.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://04-dapur-bunda-catering.vercel.app',
-    github: 'https://github.com/ekonugroho98/04-dapur-bunda-catering',
   },
   {
     title: 'Lensa Cerita Studio',
@@ -49,7 +46,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Photography studio website showcasing prewedding, family, and product photography with portfolio gallery and pricing.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://05-lensa-cerita-studio.vercel.app',
-    github: 'https://github.com/ekonugroho98/05-lensa-cerita-studio',
   },
   {
     title: 'Garasi Jaya Bengkel',
@@ -57,7 +53,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Auto repair workshop website with service catalog, diagnostic scanner info, and maintenance package pricing.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://06-garasi-jaya-bengkel.vercel.app',
-    github: 'https://github.com/ekonugroho98/06-garasi-jaya-bengkel',
   },
   {
     title: 'Senyum Sehat Klinik',
@@ -65,7 +60,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Family dental clinic website with treatment services, consultation booking, and patient testimonials.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://07-senyum-sehat-klinik.vercel.app',
-    github: 'https://github.com/ekonugroho98/07-senyum-sehat-klinik',
   },
   {
     title: 'FitZone Gym',
@@ -73,7 +67,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Gym & fitness studio website with class schedules, membership plans, trainer profiles, and facility gallery.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://08-fitzone-gym.vercel.app',
-    github: 'https://github.com/ekonugroho98/08-fitzone-gym',
   },
   {
     title: 'Mekar Florist',
@@ -81,7 +74,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Flower shop website with bouquet collections, custom arrangement ordering, pricing tiers, and delivery info.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://09-mekar-florist.vercel.app',
-    github: 'https://github.com/ekonugroho98/09-mekar-florist',
   },
   {
     title: 'CetakCepat Percetakan',
@@ -89,7 +81,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Digital print shop website with product catalog, bulk pricing, and quick-order system via WhatsApp.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://10-cetakcepat-percetakan.vercel.app',
-    github: 'https://github.com/ekonugroho98/10-cetakcepat-percetakan',
   },
   {
     title: 'Nusantara Travel',
@@ -97,7 +88,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Travel agency website with destination packages for Bromo, Labuan Bajo, Bali, Raja Ampat, and custom trips.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://11-nusantara-travel.vercel.app',
-    github: 'https://github.com/ekonugroho98/11-nusantara-travel',
   },
   {
     title: 'Glow Beauty Salon',
@@ -105,7 +95,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Beauty salon & spa website with treatment menu, bridal packages, spa pricing, and appointment booking.',
     tech: ['React', 'TypeScript', 'Tailwind'],
     url: 'https://12-glow-beauty-salon.vercel.app',
-    github: 'https://github.com/ekonugroho98/12-glow-beauty-salon',
   },
   {
     title: 'FloriStock',
@@ -113,7 +102,6 @@ const umkmProjects: UmkmProject[] = [
     description: 'Flower shop inventory management system with real-time stock tracking, recipe/BOM management, sales logging, and financial reporting.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://floristock.vercel.app',
-    github: '',
   },
 ];
 
@@ -184,23 +172,9 @@ export const UmkmProjects: React.FC = () => {
                 ))}
               </div>
 
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 font-mono text-xs text-slate-400 group-hover:text-primary transition-colors">
-                  <span className="text-primary">→</span>
-                  Live Demo
-                </div>
-                {project.github && (
-                  <span
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      window.open(project.github, '_blank');
-                    }}
-                    className="font-mono text-[11px] text-slate-400 hover:text-primary transition-colors cursor-pointer"
-                  >
-                    GitHub
-                  </span>
-                )}
+              <div className="flex items-center gap-2 font-mono text-xs text-slate-400 group-hover:text-primary transition-colors">
+                <span className="text-primary">→</span>
+                Live Demo
               </div>
             </div>
           </a>
