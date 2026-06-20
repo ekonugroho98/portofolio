@@ -122,7 +122,7 @@ export const UmkmProjects: React.FC = () => {
         index="01"
         label="beliwebsite"
         title="beliwebsite"
-        subtitle="Landing page & web app untuk UMKM — mulai dari Rp 200rb, sudah online dengan hosting gratis. Klik contoh di bawah, langsung pesan via WhatsApp."
+        subtitle="Landing pages & web apps for small businesses — start from Rp 200K, already online with free hosting. Click an example to order via WhatsApp."
       />
 
       <div className="mt-10 mb-12 flex flex-wrap gap-2 items-center font-mono text-[13px]">
@@ -145,7 +145,7 @@ export const UmkmProjects: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map((project, idx) => {
           const wa = waLinkFor(project.title, project.url);
-          const startFromLabel = project.category === 'Web App' ? 'mulai Rp 1jt' : 'mulai Rp 200rb';
+          const startFromLabel = project.category === 'Web App' ? 'start from Rp 1M' : 'start from Rp 200K';
           return (
           <div
             key={idx}
