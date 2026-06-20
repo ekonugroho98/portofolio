@@ -39,7 +39,7 @@ export const Experience: React.FC = () => {
         <div className="lg:col-span-4">
           <div className="lg:sticky lg:top-28">
             <SectionHeading
-              index="04"
+              index="05"
               label="experience"
               title="Career Path"
               subtitle="Reliable systems across transportation, travel, and financial sectors."

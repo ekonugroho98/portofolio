@@ -69,7 +69,7 @@ export const CaseStudies: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="06"
+        index="07"
         label="case_studies"
         title="Engineering Deep-Dives"
         subtitle="How two backend systems were designed — problem, architecture, trade-offs, and outcome."
