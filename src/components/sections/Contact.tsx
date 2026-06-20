@@ -5,7 +5,7 @@ export const Contact: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="07"
+        index="08"
         label="contact"
         title="Let's build something reliable"
         subtitle="Based in Bogor, Indonesia. Open to backend engineering challenges and system optimization projects."

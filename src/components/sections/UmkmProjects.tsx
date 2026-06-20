@@ -10,6 +10,12 @@ interface UmkmProject {
 
 }
 
+const WHATSAPP = '6281519624321';
+
+const waLinkFor = (title: string, url: string) =>
+  `https://wa.me/${WHATSAPP}?text=` +
+  encodeURIComponent(`Halo Eko, saya tertarik dibuatkan website seperti *${title}*.\nContoh: ${url}\nBisa diskusi?`);
+
 const umkmProjects: UmkmProject[] = [
   {
     title: 'KiloFresh Laundry',
@@ -137,13 +143,12 @@ export const UmkmProjects: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filtered.map((project, idx) => (
-          <a
+        {filtered.map((project, idx) => {
+          const wa = waLinkFor(project.title, project.url);
+          return (
+          <div
             key={idx}
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex flex-col rounded-xl overflow-hidden bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 project-card-hover"
+            className="group relative flex flex-col rounded-xl overflow-hidden bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 project-card-hover"
           >
             {/* Website Preview */}
             <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
@@ -156,8 +161,31 @@ export const UmkmProjects: React.FC = () => {
                 style={{ transform: 'scale(0.28125)', transformOrigin: 'top left' }}
                 tabIndex={-1}
               />
-              {/* Overlay to prevent interaction & show hover effect */}
-              <div className="absolute inset-0 bg-transparent group-hover:bg-primary/5 transition-colors" />
+              {/* Hover overlay: two actions */}
+              <div className="absolute inset-0 flex items-center justify-center gap-2.5 bg-slate-900/55 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-white text-slate-900 px-3.5 py-2 text-xs font-mono font-semibold hover:bg-slate-100 transition-colors"
+                >
+                  <svg viewBox="0 0 24 24" className="size-3.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M14 3h7v7M21 3l-9 9M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" />
+                  </svg>
+                  Lihat Demo
+                </a>
+                <a
+                  href={wa}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-primary text-white px-3.5 py-2 text-xs font-mono font-semibold hover:bg-primary-dark transition-colors"
+                >
+                  <svg viewBox="0 0 24 24" className="size-3.5" fill="currentColor" aria-hidden="true">
+                    <path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3 2.9 1.2 2.9.8 3.4.8.5 0 1.6-.7 1.9-1.3.2-.6.2-1.2.1-1.3 0-.1-.2-.2-.5-.3M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20" />
+                  </svg>
+                  Pesan via WA
+                </a>
+              </div>
             </div>
 
             <div className="px-5 h-10 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 font-mono text-xs text-slate-400">
@@ -176,7 +204,7 @@ export const UmkmProjects: React.FC = () => {
                 {project.description}
               </p>
 
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <div className="flex flex-wrap gap-1.5">
                   {project.tech.map((t) => (
                     <span
@@ -187,14 +215,19 @@ export const UmkmProjects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex items-center gap-1.5 font-mono text-xs text-slate-400 group-hover:text-primary transition-colors">
-                  <span className="text-primary">→</span>
-                  Demo
+                <div className="flex items-center gap-3 font-mono text-xs shrink-0">
+                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors">
+                    Demo
+                  </a>
+                  <a href={wa} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary-dark transition-colors">
+                    WA
+                  </a>
                 </div>
               </div>
             </div>
-          </a>
-        ))}
+          </div>
+          );
+        })}
       </div>
     </section>
   );

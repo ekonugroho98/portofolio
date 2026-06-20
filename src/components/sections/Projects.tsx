@@ -75,7 +75,7 @@ export const Projects: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="05"
+        index="06"
         label="work"
         title="Featured Projects"
         subtitle="Key professional contributions across transportation, finance, and travel industries."

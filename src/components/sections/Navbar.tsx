@@ -3,6 +3,7 @@ import { ThemeToggle } from '../ThemeToggle';
 
 const links = [
   { label: 'beliwebsite', href: '#beliwebsite' },
+  { label: 'estimasi', href: '#estimasi' },
   { label: 'about', href: '#about' },
   { label: 'skills', href: '#skills' },
   { label: 'experience', href: '#experience' },

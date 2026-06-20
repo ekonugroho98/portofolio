@@ -4,7 +4,7 @@ import { SectionHeading } from '../SectionHeading';
 export const About: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
-      <SectionHeading index="02" label="about" title="Profile & Foundation" />
+      <SectionHeading index="03" label="about" title="Profile & Foundation" />
 
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-7 flex flex-col gap-6">
