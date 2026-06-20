@@ -4,7 +4,7 @@ import { SectionHeading } from '../SectionHeading';
 export const About: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
-      <SectionHeading index="01" label="about" title="Profile & Foundation" />
+      <SectionHeading index="02" label="about" title="Profile & Foundation" />
 
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-7 flex flex-col gap-6">
@@ -42,7 +42,7 @@ export const About: React.FC = () => {
             <div className="p-6 flex flex-col gap-6">
               <div className="relative pl-5 border-l-2 border-primary/40">
                 <div className="absolute -left-[5px] top-1.5 size-2 rounded-full bg-primary" />
-                <p className="font-semibold text-slate-900 dark:text-white">Bachelor of Information System</p>
+                <p className="font-semibold text-slate-900 dark:text-white">Bachelor of Information Systems</p>
                 <p className="text-sm text-slate-600 dark:text-slate-300">Gunadarma University</p>
                 <p className="font-mono text-xs text-slate-400 mt-1">Dec 2016 · GPA 3.49 / 4.00</p>
               </div>

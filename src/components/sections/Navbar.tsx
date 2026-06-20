@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { ThemeToggle } from '../ThemeToggle';
 
 const links = [
+  { label: 'beliwebsite', href: '#beliwebsite' },
   { label: 'about', href: '#about' },
   { label: 'skills', href: '#skills' },
   { label: 'experience', href: '#experience' },
   { label: 'work', href: '#work' },
-  { label: 'umkm', href: '#umkm' },
+  { label: 'cases', href: '#cases' },
   { label: 'contact', href: '#contact' },
 ];
 

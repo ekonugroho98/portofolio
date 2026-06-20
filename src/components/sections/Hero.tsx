@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
               <span className="text-primary">Backend Specialist</span>
             </h1>
             <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-              Fullstack Engineer with 7+ years of experience, specializing in backend systems. Proficient in{' '}
+              Backend-focused engineer with 7+ years of experience building high-performance, reliable systems. Proficient in{' '}
               <span className="font-mono text-primary">Go</span>,{' '}
               <span className="font-mono text-primary">Java</span>, and scalable microservices.
               Available for freelance projects.
@@ -50,6 +50,16 @@ export const Hero: React.FC = () => {
               className="inline-flex items-center gap-2 bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 px-7 py-3.5 rounded-lg font-mono text-sm font-semibold text-slate-700 dark:text-slate-200 hover:border-primary/50 hover:text-primary transition-colors"
             >
               get_in_touch()
+            </a>
+            <a
+              href="/CV_Eko_Nugroho.pdf"
+              download
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-mono text-sm font-semibold text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/60 hover:border-primary/50 hover:text-primary transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              download_cv
             </a>
           </div>
         </div>

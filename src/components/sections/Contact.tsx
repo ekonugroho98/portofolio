@@ -5,7 +5,7 @@ export const Contact: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="06"
+        index="07"
         label="contact"
         title="Let's build something reliable"
         subtitle="Based in Bogor, Indonesia. Open to backend engineering challenges and system optimization projects."
@@ -36,13 +36,28 @@ export const Contact: React.FC = () => {
               </a>
               <div className="h-px bg-slate-700/50" />
               <a
-                href="https://linkedin.com/in/ekonugroho98"
+                href="https://www.linkedin.com/in/eko-nugroho-173b21115/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between group"
               >
                 <span className="text-accent">"linkedin"</span>
-                <span className="text-slate-300 group-hover:text-primary transition-colors">/in/ekonugroho98</span>
+                <span className="text-slate-300 group-hover:text-primary transition-colors">/in/eko-nugroho</span>
+              </a>
+              <div className="h-px bg-slate-700/50" />
+              <a
+                href="https://github.com/ekonugroho98"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between group"
+              >
+                <span className="text-accent">"github"</span>
+                <span className="text-slate-300 group-hover:text-primary transition-colors">/ekonugroho98</span>
+              </a>
+              <div className="h-px bg-slate-700/50" />
+              <a href="/CV_Eko_Nugroho.pdf" download className="flex items-center justify-between group">
+                <span className="text-accent">"resume"</span>
+                <span className="text-slate-300 group-hover:text-primary transition-colors">download CV ↓</span>
               </a>
               <div className="h-px bg-slate-700/50" />
               <div className="flex items-center justify-between">
