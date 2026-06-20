@@ -41,6 +41,8 @@
     </script>
     <style>
         html { scroll-behavior: smooth; }
+        /* keep anchored sections clear of the sticky navbar */
+        main > section[id] { scroll-margin-top: 5rem; }
 
         /* Grid background pattern */
         .grid-bg {
