@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { SectionHeading } from '../SectionHeading';
 
 interface UmkmProject {
@@ -113,9 +113,9 @@ export const UmkmProjects: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="05"
-        label="umkm"
-        title="UMKM Projects"
+        index="01"
+        label="beliwebsite"
+        title="beliwebsite"
         subtitle="Landing pages and web apps built for small & medium businesses across various industries."
       />
 
@@ -145,6 +145,21 @@ export const UmkmProjects: React.FC = () => {
             rel="noopener noreferrer"
             className="group flex flex-col rounded-xl overflow-hidden bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 project-card-hover"
           >
+            {/* Website Preview */}
+            <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+              <iframe
+                src={project.url}
+                title={project.title}
+                loading="lazy"
+                sandbox="allow-scripts allow-same-origin"
+                className="w-[1280px] h-[800px] origin-top-left pointer-events-none"
+                style={{ transform: 'scale(0.28125)', transformOrigin: 'top left' }}
+                tabIndex={-1}
+              />
+              {/* Overlay to prevent interaction & show hover effect */}
+              <div className="absolute inset-0 bg-transparent group-hover:bg-primary/5 transition-colors" />
+            </div>
+
             <div className="px-5 h-10 flex items-center justify-between border-b border-slate-200 dark:border-slate-800 font-mono text-xs text-slate-400">
               <div className="flex items-center gap-1.5">
                 <span className="size-2.5 rounded-full bg-slate-300 dark:bg-slate-600 group-hover:bg-primary transition-colors" />
@@ -153,28 +168,29 @@ export const UmkmProjects: React.FC = () => {
               <span className="text-slate-300 dark:text-slate-600">{`{ }`}</span>
             </div>
 
-            <div className="p-6 flex flex-col flex-1">
-              <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+            <div className="p-5 flex flex-col flex-1">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-5 flex-1">
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4 flex-1 line-clamp-2">
                 {project.description}
               </p>
 
-              <div className="flex flex-wrap gap-1.5 mb-5">
-                {project.tech.map((t) => (
-                  <span
-                    key={t}
-                    className="font-mono text-[11px] px-2 py-1 rounded bg-primary/5 text-primary border border-primary/15"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex items-center gap-2 font-mono text-xs text-slate-400 group-hover:text-primary transition-colors">
-                <span className="text-primary">→</span>
-                Live Demo
+              <div className="flex items-center justify-between">
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="font-mono text-[11px] px-2 py-1 rounded bg-primary/5 text-primary border border-primary/15"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex items-center gap-1.5 font-mono text-xs text-slate-400 group-hover:text-primary transition-colors">
+                  <span className="text-primary">→</span>
+                  Demo
+                </div>
               </div>
             </div>
           </a>

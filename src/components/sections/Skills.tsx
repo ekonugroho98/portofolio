@@ -83,7 +83,7 @@ export const Skills: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="02"
+        index="03"
         label="skills"
         title="Technical Expertise"
         subtitle="Proven proficiency across languages, frameworks, and architectural patterns."

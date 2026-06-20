@@ -6,6 +6,7 @@ import { About } from './components/sections/About';
 import { Skills } from './components/sections/Skills';
 import { Projects } from './components/sections/Projects';
 import { Experience } from './components/sections/Experience';
+import { CaseStudies } from './components/sections/CaseStudies';
 import { UmkmProjects } from './components/sections/UmkmProjects';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/sections/Footer';
@@ -17,6 +18,9 @@ const App: React.FC = () => {
       <main>
         <section id="hero">
           <Hero />
+        </section>
+        <section id="beliwebsite">
+          <UmkmProjects />
         </section>
         <section id="about">
           <About />
@@ -30,8 +34,8 @@ const App: React.FC = () => {
         <section id="work">
           <Projects />
         </section>
-        <section id="umkm">
-          <UmkmProjects />
+        <section id="cases">
+          <CaseStudies />
         </section>
         <section id="contact">
           <Contact />

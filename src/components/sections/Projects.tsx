@@ -35,7 +35,7 @@ const projects: Project[] = [
     tags: ['High-Load', 'Performance'],
     description:
       'High-performance RESTful APIs supporting 10,000+ daily transactions with <100ms response time, ensuring reliable operations for critical services.',
-    tech: ['Go', 'Golang', 'Performance'],
+    tech: ['Go', 'gRPC', 'Performance'],
     linkText: 'Production System',
   },
   {
@@ -75,7 +75,7 @@ export const Projects: React.FC = () => {
   return (
     <section className="max-w-[1200px] mx-auto px-6 py-20 md:py-28 border-t border-slate-200/70 dark:border-slate-800/70">
       <SectionHeading
-        index="04"
+        index="05"
         label="work"
         title="Featured Projects"
         subtitle="Key professional contributions across transportation, finance, and travel industries."
@@ -131,8 +131,11 @@ export const Projects: React.FC = () => {
                 ))}
               </div>
 
-              <div className="flex items-center gap-2 font-mono text-xs text-slate-400 group-hover:text-primary transition-colors">
-                <span className="text-primary">→</span>
+              <div className="flex items-center gap-1.5 font-mono text-xs text-slate-400" title="Proprietary work — source not public">
+                <svg viewBox="0 0 24 24" className="size-3.5 text-slate-400" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
                 {project.linkText}
               </div>
             </div>
