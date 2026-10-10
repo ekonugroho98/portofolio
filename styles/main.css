@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+section[id] { scroll-margin-top: 5rem; }
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(100,116,139,0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100,116,139,0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.dark .grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(148,163,184,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148,163,184,0.06) 1px, transparent 1px);
+}
+.glow-primary { background: radial-gradient(closest-side, rgba(16,185,129,0.18), transparent); }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+  .eyebrow { @apply font-mono text-xs font-semibold uppercase tracking-widest text-primary; }
+  .h2 { @apply mt-3 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl; }
+  .lead { @apply mt-4 max-w-2xl text-base leading-relaxed text-slate-600 dark:text-slate-400 sm:text-lg; }
+  .card { @apply rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-surface-dark; }
+  .badge { @apply inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 font-mono text-[11px] font-semibold; }
+  .badge-live { @apply border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400; }
+  .badge-beta { @apply border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400; }
+  .badge-dev { @apply border-slate-400/30 bg-slate-400/10 text-slate-600 dark:text-slate-400; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition hover:bg-primary-dark; }
+  .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary dark:border-slate-700 dark:text-slate-200; }
+  .prose-legal h2 { @apply mt-10 text-xl font-bold text-slate-900 dark:text-white; }
+  .prose-legal p, .prose-legal li { @apply mt-3 leading-relaxed text-slate-600 dark:text-slate-400; }
+  .prose-legal ul { @apply mt-2 list-disc pl-6; }
+  .prose-legal a { @apply text-primary underline underline-offset-2; }
+}
